@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mqm-producer
+ibm:
+  mq:
+    queue-manager: QM1
+    channel: DEV.ADMIN.SVRCONN
+    conn-name: ec2-13-233-146-34.ap-south-1.compute.amazonaws.com(1414)
+    user: admin
+    password: passw0rd
+    pool:
+      enabled: true
+      max-connections: 1 
+      max-sessions-per-connection: 15
+      
+server.port: 0
